@@ -1954,9 +1954,9 @@
                 <div class="hidden md:flex space-x-8">
                     <a href="#home" class="nav-link hover:text-blue-400 active-nav" data-section="home">Home</a>
                     <a href="#about" class="nav-link hover:text-blue-400" data-section="about">About</a>
-                    <a href="#skills" class="nav-link hover:text-blue-400" data-section="skills">Skills</a>
                     <a href="#experience" class="nav-link hover:text-blue-400" data-section="experience">Experience</a>
                     <a href="#projects" class="nav-link hover:text-blue-400" data-section="projects">Projects</a>
+                    <a href="#skills" class="nav-link hover:text-blue-400" data-section="skills">Skills</a>
                     <a href="#contact" class="nav-link hover:text-blue-400" data-section="contact">Contact</a>
                 </div>
                 <button id="mobile-menu-btn" class="md:hidden">
@@ -1969,9 +1969,9 @@
             <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
                 <a href="#home" class="block py-2 hover:text-blue-400 active-nav" data-section="home">Home</a>
                 <a href="#about" class="block py-2 hover:text-blue-400" data-section="about">About</a>
-                <a href="#skills" class="block py-2 hover:text-blue-400" data-section="skills">Skills</a>
                 <a href="#experience" class="block py-2 hover:text-blue-400" data-section="experience">Experience</a>
                 <a href="#projects" class="block py-2 hover:text-blue-400" data-section="projects">Projects</a>
+                <a href="#skills" class="block py-2 hover:text-blue-400" data-section="skills">Skills</a>
                 <a href="#contact" class="block py-2 hover:text-blue-400" data-section="contact">Contact</a>
             </div>
         </nav>
@@ -2015,7 +2015,10 @@
                 </h1>
             </div>
             <div class="slide-in-right" style="animation-delay: 0.3s;">
-                <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2x">I'm a skilled <span
+                <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Crafting digital experiences with 3 years of expertise in modern web technologies
+                </p>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">I'm a skilled <span
                         className="cs_primary_color">Full-Stack Web Developer</span> with <span
                         className="cs_primary_color">3+</span> years of experience, specializing in <span
                         className="cs_primary_color">React.js, Node.js, Express.js,</span> and <span
@@ -2023,44 +2026,127 @@
                     scalable <span className="cs_primary_color">Website, Web applications</span> and <span
                         className="cs_primary_color">Admin
                         dashboards</span> with a strong focus on performance, responsiveness, and user experience.</p>
+
             </div>
 
             <div class="slide-in-right text-center" style="animation-delay: 0.3s;">
-                <div style="padding: 2px; border-radius: 50px; display: inline-block;">
-                    <button onclick="window.open('./assets/cv/KesavanD.pdf', '_blank')"
+
+                <div style="  padding: 2px; border-radius: 50px; display: inline-block; ">
+                    <button onclick="openProjectModal('ecommerce-modal')"
                         class="ml-auto px-4 py-2 bg-blue-500/20 text-blue-300 rounded-lg text-sm hover:bg-blue-500/40 transition-all hover:scale-105 flex items-center group mouse-hover-effect">
 
                         Download CV
                         <i class="fas fa-arrow-down" style="margin-left: 10px;"></i>
                     </button>
                 </div>
-
-                <div style="padding: 2px; border-radius: 50px; display: inline-block;">
-                    <button onclick="window.open('https://www.linkedin.com/in/kesavan-d-454000209/', '_blank')"
-                        aria-label="Visit LinkedIn Profile"
-                        class="ml-auto px-4 py-2 bg-purple-500/20 text-purple-300 rounded-lg text-sm hover:bg-purple-500/40 transition-all hover:scale-105 flex items-center group mouse-hover-effect">
-
-                        <i class="fab fa-linkedin text-lg"></i>
-                    </button>
-                </div>
-            </div>
-
-            <div class="fade-in-up " style="animation-delay: 0.6s; padding-top: 20px;">
-                <button onclick="scrollToSection('projects')"
-                    class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 glow relative overflow-hidden group mouse-hover-effect">
-                    <span
-                        class="absolute top-0 left-0 w-full h-full bg-white/10 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
-                    <span class="relative z-10 flex items-center justify-center">
-                        View My Work
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-300"
-                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                        </svg>
-                    </span>
+                <div style="  padding: 2px; border-radius: 50px; display: inline-block; "></div>
+                <button onclick="openProjectModal('taskapp-modal')"
+                    class="ml-auto px-4 py-2 bg-purple-500/20 text-purple-300 rounded-lg text-sm hover:bg-purple-500/40 transition-all hover:scale-105 flex items-center group mouse-hover-effect">
+                    <i class="fab fa-instagram"></i>
                 </button>
             </div>
+            <div style="  padding: 2px; border-radius: 50px; display: inline-block; "></div>
+            <button onclick="openProjectModal('analytics-modal')"
+                class="ml-auto px-4 py-2 bg-green-500/20 text-green-300 rounded-lg text-sm hover:bg-green-500/40 transition-all hover:scale-105 flex items-center group mouse-hover-effect">
+
+                <i class="fab fa-twitter"></i>
+            </button>
+        </div>
+        <!-- Download CV Button -->
+        <div style="  padding: 2px; border-radius: 50px; display: inline-block; ">
+            <button onclick="openProjectModal('ecommerce-modal')"
+                class="ml-auto px-4 py-2 bg-blue-500/20 text-blue-300 rounded-lg text-sm hover:bg-blue-500/40 transition-all hover:scale-105 flex items-center group mouse-hover-effect">
+
+                Download CV
+                <i class="fas fa-arrow-down" style="margin-left: 10px;"></i>
+            </button>
+        </div>
+
+        <!-- Instagram Icon -->
+        <div style="
+                                        background: linear-gradient(45deg, #c471ed, #f64f59);
+                                        padding: 2px;
+                                        border-radius: 50%;
+                                        display: inline-block;
+                                      ">
+            <a href="https://instagram.com" target="_blank" style="
+                                          display: flex;
+                                          justify-content: center;
+                                          align-items: center;
+                                          width: 40px;
+                                          height: 40px;
+                                          background-color: black;
+                                          color: white;
+                                          border-radius: 50%;
+                                          text-decoration: none;
+                                        ">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+
+        <!-- Twitter Icon -->
+        <div style="
+                                        background: linear-gradient(45deg, #c471ed, #f64f59);
+                                        padding: 2px;
+                                        border-radius: 50%;
+                                        display: inline-block;
+                                      ">
+            <a href="https://twitter.com" target="_blank" style="
+                                          display: flex;
+                                          justify-content: center;
+                                          align-items: center;
+                                          width: 40px;
+                                          height: 40px;
+                                          background-color: black;
+                                          color: white;
+                                          border-radius: 50%;
+                                          text-decoration: none;
+                                        ">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+
+        <!-- Facebook Icon -->
+        <div style="
+                                        background: linear-gradient(45deg, #c471ed, #f64f59);
+                                        padding: 2px;
+                                        border-radius: 50%;
+                                        display: inline-block;
+                                      ">
+            <a href="https://facebook.com" target="_blank" style="
+                                          display: flex;
+                                          justify-content: center;
+                                          align-items: center;
+                                          width: 40px;
+                                          height: 40px;
+                                          background-color: black;
+                                          color: white;
+                                          border-radius: 50%;
+                                          text-decoration: none;
+                                        ">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </div>
+
+        </div>
+
+
+        <div class="fade-in-up" style="animation-delay: 0.6s;">
+            <button onclick="scrollToSection('projects')"
+                class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 glow relative overflow-hidden group mouse-hover-effect">
+                <span
+                    class="absolute top-0 left-0 w-full h-full bg-white/10 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
+                <span class="relative z-10 flex items-center justify-center">
+                    View My Work
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-300"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </span>
+            </button>
+        </div>
         </div>
     </section>
 
@@ -2075,17 +2161,14 @@
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="space-y-6">
                     <p class="text-lg text-gray-300 leading-relaxed">
-                        With more than 3+ years of hands-on experience in full-stack development, I’ve built a wide
-                        range of scalable websites,
-                        dynamic web apps, and intuitive admin dashboards using React.js, Node.js, Express.js, MongoDB
-                        and Firebase.
+                        I'm a passionate full-stack developer with 3 years of experience building scalable web
+                        applications.
+                        I love turning complex problems into simple, beautiful, and intuitive solutions.
                     </p>
                     <p class="text-lg text-gray-300 leading-relaxed">
-                        I write clean, maintainable code and always aim to deliver high-quality solutions on time.
-                        Whether it's frontend,
-                        backend, or the full stack, I bring a detail-oriented mindset and a passion for problem-solving
-                        that helps turn your
-                        ideas into reality.
+                        My expertise spans across modern frontend frameworks, robust backend systems, and cloud
+                        technologies.
+                        I'm always eager to learn new technologies and take on challenging projects.
                     </p>
                     <div class="flex flex-wrap gap-4">
                         <span class="px-4 py-2 bg-blue-500/20 text-blue-300 rounded-full">Problem Solver</span>
@@ -2102,138 +2185,6 @@
                         <div
                             class="relative w-full h-full bg-gray-700 rounded-full flex items-center justify-center text-6xl">
                             <img src="./assets/img/kesav5.png" alt="img" style="border-radius: 50%;">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-20">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gradient mb-4">Skills &amp; Technologies</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition-all duration-300 skill-3d-container">
-                    <div class="skill-3d-item text-center">
-                        <h3 class="skill-heading text-xl font-bold mb-6 text-blue-400 relative inline-block">
-                            <span class="relative z-10">Frontend</span>
-                            <div
-                                class="skill-heading-bg absolute inset-0 bg-blue-500/20 rounded transform -skew-x-6 -z-10">
-                            </div>
-                        </h3>
-                    </div>
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between mb-2">
-
-                                <span>React.js, HTML5, CSS3, JavaScript, Bootstrap, Tailwind CSS</span>
-                            </div>
-                            <!-- <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
-                                <div class="skill-bar w-[90%] mouse-hover-effect" style="animation-delay: 0.1s;"></div>
-                            </div> -->
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span>Vue.js</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
-                                <div class="skill-bar w-[85%] mouse-hover-effect" style="animation-delay: 0.2s;"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span>TypeScript</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
-                                <div class="skill-bar w-[80%] mouse-hover-effect" style="animation-delay: 0.3s;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition-all duration-300 skill-3d-container">
-                    <div class="skill-3d-item text-center">
-                        <h3 class="skill-heading text-xl font-bold mb-6 text-purple-400 relative inline-block">
-                            <span class="relative z-10">Backend</span>
-                            <div
-                                class="skill-heading-bg absolute inset-0 bg-purple-500/20 rounded transform -skew-x-6 -z-10">
-                            </div>
-                        </h3>
-                    </div>
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span>Node.js</span>
-                                <span>88%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
-                                <div class="skill-bar w-[88%] mouse-hover-effect" style="animation-delay: 0.4s;"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span>Python</span>
-                                <span>75%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
-                                <div class="skill-bar w-[75%] mouse-hover-effect" style="animation-delay: 0.5s;"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span>Express.js</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
-                                <div class="skill-bar w-[85%] mouse-hover-effect" style="animation-delay: 0.6s;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition-all duration-300 skill-3d-container">
-                    <div class="skill-3d-item text-center">
-                        <h3 class="skill-heading text-xl font-bold mb-6 text-pink-400 relative inline-block">
-                            <span class="relative z-10">Database &amp; Cloud</span>
-                            <div
-                                class="skill-heading-bg absolute inset-0 bg-pink-500/20 rounded transform -skew-x-6 -z-10">
-                            </div>
-                        </h3>
-                    </div>
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span>MongoDB</span>
-                                <span>82%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
-                                <div class="skill-bar w-[82%] mouse-hover-effect" style="animation-delay: 0.7s;"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span>PostgreSQL</span>
-                                <span>78%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
-                                <div class="skill-bar w-[78%] mouse-hover-effect" style="animation-delay: 0.8s;"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span>AWS</span>
-                                <span>70%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
-                                <div class="skill-bar w-[70%] mouse-hover-effect" style="animation-delay: 0.9s;"></div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -2444,6 +2395,138 @@
                                         d="M9 5l7 7-7 7"></path>
                                 </svg>
                             </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gradient mb-4">Skills &amp; Technologies</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition-all duration-300 skill-3d-container">
+                    <div class="skill-3d-item">
+                        <h3 class="skill-heading text-xl font-bold mb-6 text-blue-400 relative inline-block">
+                            <span class="relative z-10">Frontend</span>
+                            <div
+                                class="skill-heading-bg absolute inset-0 bg-blue-500/20 rounded transform -skew-x-6 -z-10">
+                            </div>
+                        </h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>React.js</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                                <div class="skill-bar w-[90%] mouse-hover-effect" style="animation-delay: 0.1s;"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Vue.js</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                                <div class="skill-bar w-[85%] mouse-hover-effect" style="animation-delay: 0.2s;"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>TypeScript</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                                <div class="skill-bar w-[80%] mouse-hover-effect" style="animation-delay: 0.3s;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition-all duration-300 skill-3d-container">
+                    <div class="skill-3d-item">
+                        <h3 class="skill-heading text-xl font-bold mb-6 text-purple-400 relative inline-block">
+                            <span class="relative z-10">Backend</span>
+                            <div
+                                class="skill-heading-bg absolute inset-0 bg-purple-500/20 rounded transform -skew-x-6 -z-10">
+                            </div>
+                        </h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Node.js</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                                <div class="skill-bar w-[88%] mouse-hover-effect" style="animation-delay: 0.4s;"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Python</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                                <div class="skill-bar w-[75%] mouse-hover-effect" style="animation-delay: 0.5s;"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Express.js</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                                <div class="skill-bar w-[85%] mouse-hover-effect" style="animation-delay: 0.6s;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition-all duration-300 skill-3d-container">
+                    <div class="skill-3d-item">
+                        <h3 class="skill-heading text-xl font-bold mb-6 text-pink-400 relative inline-block">
+                            <span class="relative z-10">Database &amp; Cloud</span>
+                            <div
+                                class="skill-heading-bg absolute inset-0 bg-pink-500/20 rounded transform -skew-x-6 -z-10">
+                            </div>
+                        </h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>MongoDB</span>
+                                <span>82%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                                <div class="skill-bar w-[82%] mouse-hover-effect" style="animation-delay: 0.7s;"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>PostgreSQL</span>
+                                <span>78%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                                <div class="skill-bar w-[78%] mouse-hover-effect" style="animation-delay: 0.8s;"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>AWS</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                                <div class="skill-bar w-[70%] mouse-hover-effect" style="animation-delay: 0.9s;"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
